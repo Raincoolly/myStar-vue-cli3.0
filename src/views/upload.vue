@@ -111,7 +111,7 @@ export default {
             reader.onload = function (e) {
                 compress(this.result);
             };
-            reader.readAsDataURL(this.files[0]);
+            // reader.readAsDataURL(this.files[0]);
         },
         compress:function (res) {
             var img = new Image(),
@@ -128,7 +128,7 @@ export default {
                 ctx.clearRect(0, 0, cvs.width, cvs.height);
                 ctx.drawImage(img, 0, 0, img.width, img.height);
                 var dataUrl = cvs.toDataURL('image/jpeg', 0.6);
-// 上传略
+                // 上传略
             }
             img.src = res;
         }

@@ -100,7 +100,7 @@ module.exports = {
 
     // All options for webpack-dev-server are supported
     // https://webpack.js.org/configuration/dev-server/
-    devServer: {
+ /*   devServer: {
         open: true,
 
         host: '127.0.0.1',
@@ -115,7 +115,7 @@ module.exports = {
 
         before: app => {
         }
-    },
+    },*/
     // 构建时开启多进程处理 babel 编译
     parallel: require('os').cpus().length > 1,
 
